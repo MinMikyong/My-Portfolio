@@ -54,21 +54,21 @@ body::-webkit-scrollbar {
 }
 
 .pimg1{
-    background-image: url("home_background.jpg");
+    background-image: url("/images/home_background.jpg");
     min-height: 100%;
 }
 
 .pimg2{
-    background-image: url("tool_background.jpg");
+    background-image: url("/images/tool_background.jpg");
     min-height: 400px;
 }
 
 .pimg3{
-    background-image: url("wall.jpg");
+    background-image: url("/images/wall.jpg");
     min-height: 300px;
 }
 .pimg4{
-    background-image: url("reach_background.jpg");
+    background-image: url("/images/reach_background.jpg");
     min-height: 100%;
 }
 
@@ -210,11 +210,11 @@ body::-webkit-scrollbar {
         background-attachment: fixed;
     }
     .pimg1{
-        background-image: url("home_background_res.jpg");
+        background-image: url("/images/home_background_res.jpg");
         background-attachment: scroll;
     }
     .pimg4{
-        background-image: url("reach_background_res.jpg");
+        background-image: url("/images/reach_background_res.jpg");
 
     }
     .home_text{
