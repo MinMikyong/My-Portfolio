@@ -1,0 +1,260 @@
+.navbar-dark, .navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-item{
+    font-family: 'Questrial', sans-serif;
+    
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #f5d317;
+    font-size: 150%;
+    padding: 10px 30px;
+}
+/* .bg-dark{
+    background: transparent;
+} */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.home_text{
+    text-align:right ;
+    color: #f5d317;
+    margin-left: 20%;
+}
+
+body,html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666; 
+    overflow: scroll;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /*fixed == parallax 
+    scroll = normal*/
+    
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url("home_background.jpg");
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url("tool_background.jpg");
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url("wall.jpg");
+    min-height: 300px;
+}
+.pimg4{
+    background-image: url("reach_background.jpg");
+    min-height: 100%;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 10px;
+}
+.section-light2{
+    text-align: center;
+    background-color: #ffc90d;
+}
+.section-light2 img{
+    width: 100%;
+}
+.section-light2 p{
+    margin: 0 0;
+    color: black;
+    font-family: 'Questrial', sans-serif;
+    font-size: 120%;
+    letter-spacing: 3px;
+
+}
+.section-light{
+    background-color: #d7b104;
+    color: black;
+}
+
+.section-dark{
+    background-color: #000000;
+    color: #d7b104;
+}
+#home_p{
+    margin-left: 200px;
+    letter-spacing: 2px;
+    font-size: 130%;
+}
+#home_h{
+    font-size: 500%;
+    margin-left: 150px;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+}
+.ptext-abt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ptext-abt img{
+    width: 20%;
+    margin-right:60px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    box-shadow: 4px 4px 10px #eecc0c;
+    border-radius: 15px;
+
+}
+.ptext img{
+    width: 80px;
+}
+.ptext img:hover{
+    cursor: pointer;
+    transform: scale(0.8);
+}
+.ptext .border{
+    background-color: #111;
+    color: white;
+    padding: 20px;
+}
+
+.ptext .trans{
+    background-color: transparent;
+}
+#tool_h{
+    color: #f5d317;
+}
+.top{
+    top: 30%;
+}
+
+.fa{
+    padding: 3px 10px;
+    margin-top: -3px;
+}
+
+#abt-h{
+    color: #f5d317;
+    text-align: center;
+    font-size: 300%;
+    padding-top: 30px;
+    letter-spacing: 4px;
+    font-family: 'Questrial', sans-serif;
+}
+.ptext-abt p{
+    color: #eecc0c;
+    padding: 0 175px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.abt-text{
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 3px;
+    font-size: 80%;
+    color: #ffe96d;
+    font-weight: bolder;
+}
+#army_link{
+    text-decoration: none;
+    text-shadow: 0px 0px 4px #9c88e9;
+    color: #eecc0c ;
+
+}
+.reach-box{
+    color: #eecc0c;
+    display: flex;
+    flex-direction: column;
+    padding-top: 250px;
+    padding-left: 10%;
+    letter-spacing: 10px;
+}
+@media(max-width:600px){
+
+    .reach-box{
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+    }
+
+    .pimg2, .pimg3, .pimg4{
+        background-attachment: fixed;
+    }
+    .pimg1{
+        background-image: url("home_background_res.jpg");
+        background-attachment: scroll;
+    }
+    .pimg4{
+        background-image: url("reach_background_res.jpg");
+
+    }
+    .home_text{
+        text-align: center;
+        margin: 0 0;
+    }
+    #home_h{
+        font-size: 400%;
+        margin: 0 0;
+
+    }
+    #home_p{
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: 0;
+    }
+    .ptext-abt p{
+        padding: 10px 20px!important;
+    }
+}
+@media(max-width:989px){
+    .ptext-abt{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .ptext-abt p{
+        padding: 10px 100px;
+    }
+    .ptext-abt img{
+        width:50px;
+        margin: 15px 15px;
+        width: 40%;
+    }
+}
+    .ptext{
+        font-size: 80%;
+    }
+
+
+
+
+
+
